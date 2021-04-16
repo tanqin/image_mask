@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 引入样式文件 -->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <!-- 思路：准备一个盒子，盒子里用图片占满，用定位将遮罩层盒子定于盒子上 -->
+    <script>
+      //div和img开始标签部分
+      document.write(`
+        <div class="box">
+        <img src=
+        `);
+      r = Math.ceil(Math.random() * 23); //生成随机数1~23
+      // img中图片路径
+      document.write(`
+        "./images/pic${r}.jpg"
+        `);
+      // img和div结束标签部分
+      document.write(`
+        alt="" />
+      </div>
+        `);
+    </script>
+  </body>
+</html>
